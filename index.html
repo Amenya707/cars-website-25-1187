@@ -1,23 +1,46 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Elite Motors - Car Website</title>
+
+<!-- EXTERNAL CSS -->
 <link rel="stylesheet" href="style.css">
+
+<!-- INTERNAL CSS -->
+<style>
+body{
+    background-color: lightgray;   /* Not white */
+    text-align: center;            /* Content centered */
+}
+
+.container{
+    margin: 20px auto;
+    padding: 20px;
+    width: 90%;
+}
+
+.car-card{
+    border: 1px solid black;
+    padding: 10px;
+    margin: 10px;
+    display: inline-block;
+    width: 250px;
+}
+</style>
+
 </head>
 
 <body>
 
 <!-- HEADER -->
 <header>
-<h1>Elite Motors</h1>
+<h1 style="color: darkblue;">Elite Motors</h1> <!-- Inline CSS -->
 <p>Luxury • Performance • Innovation</p>
 </header>
 
-<!-- TASK 1: PARAGRAPHS (8+ lines) -->
 <section class="container">
-
 <h2>Our Services</h2>
 
 <p><b>Elite Motors offers premium car services.</b></p>
@@ -32,191 +55,60 @@
 <blockquote>
 Premium cars designed for comfort and performance.
 </blockquote>
-
 </section>
 
-<!-- LINE BREAKS -->
-<section class="container">
-<h2>Line Breaks</h2>
-
-<p>
-BMW<br>
-Mercedes<br>
-Audi<br>
-Toyota
-</p>
-
-</section>
-
-<!-- HR LINES -->
+<!-- IMAGES IN CONTAINERS (More than 5 ✔) -->
 <section class="container">
 
+<div class="car-card">
+<img src="https://images.unsplash.com/photo-1555215695-3004980ad54a" width="100%">
+<h3>BMW M5</h3>
+<p>Luxury performance sedan.</p>
+</div>
+
+<div class="car-card">
+<img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70" width="100%">
+<h3>Audi R8</h3>
+<p>Iconic German supercar.</p>
+</div>
+
+<div class="car-card">
+<img src="https://images.unsplash.com/photo-1549924231-f129b911e442" width="100%">
+<h3>Mercedes AMG GT</h3>
+<p>Sporty elegance.</p>
+</div>
+
+<div class="car-card">
+<img src="https://images.unsplash.com/photo-1616788494672-ec7ca25c5e5f" width="100%">
+<h3>Land Cruiser</h3>
+<p>Reliable off-road king.</p>
+</div>
+
+<div class="car-card">
+<img src="https://images.unsplash.com/photo-1502877338535-766e1452684a" width="100%">
+<h3>Ford Mustang</h3>
+<p>American muscle.</p>
+</div>
+
 </section>
 
-<!-- PREFORMATTED TEXT -->
+<!-- VIDEOS -->
 <section class="container">
-<h2>Preformatted Text</h2>
+<h2>Car Videos</h2>
 
-<pre>
-Sports Cars
-Electric Cars
-Luxury Cars
-</pre>
+<iframe width="300" height="200" src="https://www.youtube.com/embed/y8WvJJuwtkw" allowfullscreen></iframe>
 
-</section>
+<iframe width="300" height="200" src="https://www.youtube.com/embed/e-d_2PlK3O0" allowfullscreen></iframe>
 
-<!-- LISTS -->
-<section class="container">
+<iframe width="300" height="200" src="https://www.youtube.com/embed/1f6Z0MCm9_s" allowfullscreen></iframe>
 
-<h2>Car Categories</h2>
-
-<h3>Unordered List (5 items)</h3>
-<ul>
-<li>BMW</li>
-<li>Audi</li>
-<li>Mercedes</li>
-<li>Toyota</li>
-<li>Ford</li>
-</ul>
-
-<h3>Ordered List (5 items)</h3>
-<ol>
-<li>Choose Car</li>
-<li>Book Test Drive</li>
-<li>Make Payment</li>
-<li>Delivery</li>
-<li>After Service</li>
-</ol>
-
-<h3>Nested List (6 items)</h3>
-<ul>
-<li>Luxury Cars
-    <ul>
-        <li>BMW</li>
-        <li>Mercedes</li>
-        <li>Audi</li>
-    </ul>
-</li>
-<li>Electric Cars
-    <ul>
-        <li>Tesla</li>
-        <li>Nissan Leaf</li>
-        <li>BYD</li>
-    </ul>
-</li>
-</ul>
+<iframe width="300" height="200" src="https://www.youtube.com/embed/oCSuZiWSVfk" allowfullscreen></iframe>
 
 </section>
-
-<!-- TABLE -->
-<section class="container">
-
-<h2>Car Inventory Table (10 Columns, 5 Rows)</h2>
-
-<table>
-<tr>
-<th>ID</th>
-<th>Brand</th>
-<th>Model</th>
-<th>Year</th>
-<th>Color</th>
-<th>Engine</th>
-<th>Fuel</th>
-<th>Price</th>
-<th>Stock</th>
-<th>Status</th>
-</tr>
-
-<tr>
-<td>1</td>
-<td>BMW</td>
-<td>X5</td>
-<td>2024</td>
-<td>Black</td>
-<td>V6</td>
-<td>Petrol</td>
-<td>$70,000</td>
-<td>Available</td>
-<td>New</td>
-</tr>
-
-<tr>
-<td>2</td>
-<td>Audi</td>
-<td>A6</td>
-<td>2023</td>
-<td>White</td>
-<td>V4</td>
-<td>Diesel</td>
-<td>$55,000</td>
-<td>Available</td>
-<td>New</td>
-</tr>
-
-<tr>
-<td>3</td>
-<td>Mercedes</td>
-<td>C300</td>
-<td>2024</td>
-<td>Silver</td>
-<td>V6</td>
-<td>Petrol</td>
-<td>$65,000</td>
-<td>Available</td>
-<td>New</td>
-</tr>
-
-<tr>
-<td>4</td>
-<td>Toyota</td>
-<td>Camry</td>
-<td>2022</td>
-<td>Blue</td>
-<td>V4</td>
-<td>Hybrid</td>
-<td>$30,000</td>
-<td>Available</td>
-<td>Used</td>
-</tr>
-
-<tr>
-<td>5</td>
-<td>Ford</td>
-<td>Mustang</td>
-<td>2023</td>
-<td>Red</td>
-<td>V8</td>
-<td>Petrol</td>
-<td>$80,000</td>
-<td>Limited</td>
-<td>New</td>
-</tr>
-
-</table>
-
-</section>
-
-</footer>
 
 </body>
-  <div class="car-card"><img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70" alt=""><h3>Audi R8</h3><p>Iconic German supercar.</p></div>
-  <div class="car-card"><img src="https://images.unsplash.com/photo-1549924231-f129b911e442" alt=""><h3>Mercedes AMG GT</h3><p>Sporty elegance.</p></div> 
-        <div class="car-card"><img src="https://images.unsplash.com/photo-1502877338535-766e1452684a" alt=""><h3>Ford Mustang</h3><p>American muscle.</p></div>
 </html>
 
-/* TABLE */
-table{
-width:100%;
-<div class="car-card"><img src="https://images.unsplash.com/photo-1555215695-3004980ad54a" alt=""><h3>BMW M5</h3><p>Luxury performance sedan.</p></div>
-        <div class="car-card"><img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70" alt=""><h3>Audi R8</h3><p>Iconic German supercar.</p></div>
-        <div class="car-card"><img src="https://images.unsplash.com/photo-1549924231-f129b911e442" alt=""><h3>Mercedes AMG GT</h3><p>Sporty elegance.</p></div>
-        
-        <div class="car-card"><img src="https://images.unsplash.com/photo-1616788494672-ec7ca25c5e5f" alt=""><h3>Land Cruiser</h3><p>Reliable off-road king.</p></div>
-        <div class="car-card"><img src="https://images.unsplash.com/photo-1502877338535-766e1452684a" alt=""><h3>Ford Mustang</h3><p>American muscle.</p></div>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/y8WvJJuwtkw?si=TDkOvkX6szKudFUA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/e-d_2PlK3O0?si=xl9Qk17m9gjlpRFq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/1f6Z0MCm9_s?si=k70QIi6Q-1qtVwM2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/oCSuZiWSVfk?si=donz3mfeQrjVk9zx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 
 
