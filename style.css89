@@ -1,4 +1,10 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Assignment 1.2.5</title>
 
+    <!-- Internal CSS -->
+    <style>
         /* Paragraph 2 - Internal */
         #para2 {
             color: orange;
