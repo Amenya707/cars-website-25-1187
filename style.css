@@ -1,115 +1,39 @@
-/* RESET */
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family: Arial, sans-serif;
+/* Paragraph 3 - External CSS */
+#para3 {
+    color: purple;
+    text-decoration: underline;
 }
 
-/* BODY */
-body{
-background:#f4f6f9;
-color:#333;
-line-height:1.6;
+/* Highlight 3 - External CSS */
+#highlight3 {
+    color: blue;
+    background-color: yellow;
 }
 
-/* HEADER */
-header{
-background:#111;
-color:white;
-text-align:center;
-padding:30px;
+/* Building 3 - External CSS */
+#building3 {
+    color: darkred;
 }
 
-header h1{
-font-size:40px;
+/* Car Website Main Styling */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
-/* CONTAINER */
-.container{
-width:85%;
-margin:30px auto;
-background:white;
-padding:25px;
-border-radius:10px;
-box-shadow:0 4px 10px rgba(0,0,0,0.1);
+header {
+    background-color: darkblue;
+    color: white;
+    text-align: center;
+    padding: 40px;
 }
 
-/* HEADINGS */
-h2{
-margin-bottom:15px;
-color:#222;
+h2 {
+    color: darkred;
 }
 
-h3{
-margin-top:20px;
-margin-bottom:10px;
-}
-
-/* TABLE */
-table{
-width:100%;
-border-collapse:collapse;
-margin-top:15px;
-}
-
-table, th, td{
-border:1px solid #ddd;
-}
-
-th{
-background:#222;
-color:white;
-padding:10px;
-}
-
-td{
-padding:10px;
-text-align:center;
-}
-
-/* LISTS */
-ul, ol{
-margin-left:20px;
-margin-top:10px;
-}
-
-/* BLOCKQUOTE */
-blockquote{
-margin-top:15px;
-padding:15px;
-background:#eee;
-border-left:5px solid #333;
-font-style:italic;
-}
-
-/* HR */
-hr{
-margin:10px 0;
-}
-
-/* PRE */
-pre{
-background:#222;
-color:#0f0;
-padding:15px;
-border-radius:5px;
-}
-
-/* FOOTER */
-footer{
-text-align:center;
-background:#111;
-color:white;
-padding:20px;
-margin-top:40px;
-}
-
-/* IMAGES */
-img{
-width:250px;          /* You can change this size */
-height:auto;          /* Keeps proportions */
-display:block;
-margin:20px auto;     /* Centers images */
-border-radius:10px;   /* Smooth modern look */
+section {
+    background-color: #f4f4f4;
 }
