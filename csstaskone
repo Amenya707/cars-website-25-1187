@@ -1,1 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Elite Motors - Car Website</title>
+
+<!-- EXTERNAL CSS -->
+<link rel="stylesheet" href="style.css">
+
+<!-- INTERNAL CSS -->
+<style>
+body{
+    background-color: lightgray;   /* Not white */
+    text-align: center;            /* Content centered */
+}
+
+.container{
+    margin: 20px auto;
+    padding: 20px;
+    width: 90%;
+}
+
+.car-card{
+    border: 1px solid black;
+    padding: 10px;
+    margin: 10px;
+    display: inline-block;
+    width: 250px;
+}
+    .internal-paragraph {
+    color: orange;
+    font-weight: bold;
+}
+
+.highlight2 {
+    color: green;
+}
+
+.building2 {
+    color: brown;
+}
+</style>
+
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header>
+<h1 style="color: darkblue;">Elite Motors</h1> <!-- Inline CSS -->
+<p>Luxury • Performance • Innovation</p>
+</header>
+
+<section class="container">
+<h2>Our Services</h2>
+
+<p><b>Elite Motors offers premium car services.</b></p>
+<p><i>We provide world-class customer experience.</i></p>
+<p><u>All vehicles come with full warranty.</u></p>
+<p>Manufactured in 2025<sup>th</sup> generation engines.</p>
+<p>Fuel formula: H<sub>2</sub>O cooling system.</p>
+<p><s>Old model pricing available.</s></p>
+<p><mark>Special discount available this month!</mark></p>
+<p>"Quality is never an accident." — Elite Motors</p>
+
+<blockquote>
+Premium cars designed for comfort and performance.
+</blockquote>
+</section>
+
+ <!-- ================= MODULE 1 CSS TASK ================= -->
+
+<hr>
+
+<!-- Paragraph 1 - Inline CSS -->
+<p style="color: blue; font-style: italic;">
+    Cars play a vital role in modern society by providing reliable and efficient transportation for individuals and businesses. They are designed to offer comfort, safety, and performance while meeting the diverse mobility needs of people around the world..
+</p>
+
+<!-- Paragraph 2 - Internal CSS -->
+<p class="internal-paragraph">
+    Over the years, advancements in automotive engineering have led to improved fuel efficiency, enhanced safety features, and the development of environmentally friendly technologies such as hybrid and electric vehicles.
+</p>
+
+<!-- Paragraph 3 - External CSS -->
+<p class="external-paragraph">
+    Beyond transportation, cars also represent innovation, economic growth, and personal freedom, as they connect communities and support trade, tourism, and daily activities..
+</p>
+
+<hr>
+
+<!-- H1 Headings -->
+<h1 style="color: red;">TOP SELLING CARS</h1>
+<h1 class="highlight2">NEWEST IN STOCK</h1>
+<h1 class="highlight3">ZERO MILAGE</h1>
+
+<hr>
+
+<!-- H3 Headings -->
+<h3 style="color: purple;">GERMAN CARS</h3>
+<h3 class="building2">ELECTRIC CARS</h3>
+<h3 class="building3">JAPANESE CARS</h3>   
+<!-- IMAGES IN CONTAINERS (More than 5 ✔) -->
+<section class="container">
+
+<div class="car-card">
+<img src="https://images.unsplash.com/photo-1555215695-3004980ad54a" width="100%">
+<h3>BMW M5</h3>
+<p>Luxury performance sedan.</p>
+</div>
+
+<div class="car-card">
+<img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70" width="100%">
+<h3>Audi R8</h3>
+<p>Iconic German supercar.</p>
+</div>
+
+<div class="car-card">
+<img src="https://images.unsplash.com/photo-1549924231-f129b911e442" width="100%">
+<h3>Mercedes AMG GT</h3>
+<p>Sporty elegance.</p>
+</div>
+
+<div class="car-card">
+<img src="https://images.unsplash.com/photo-1616788494672-ec7ca25c5e5f" width="100%">
+<h3>Land Cruiser</h3>
+<p>Reliable off-road king.</p>
+</div>
+
+<div class="car-card">
+<img src="https://images.unsplash.com/photo-1502877338535-766e1452684a" width="100%">
+<h3>Ford Mustang</h3>
+<p>American muscle.</p>
+</div>
+
+</section>
+
+<!-- VIDEOS -->
+<section class="container">
+<h2>Car Videos</h2>
+
+<iframe width="300" height="200" src="https://www.youtube.com/embed/y8WvJJuwtkw" allowfullscreen></iframe>
+
+<iframe width="300" height="200" src="https://www.youtube.com/embed/e-d_2PlK3O0" allowfullscreen></iframe>
+
+<iframe width="300" height="200" src="https://www.youtube.com/embed/1f6Z0MCm9_s" allowfullscreen></iframe>
+
+<iframe width="300" height="200" src="https://www.youtube.com/embed/oCSuZiWSVfk" allowfullscreen></iframe>
+<!-- FOOTER -->
+<footer style="background-color: black; color: white; padding: 20px; margin-top: 30px;">
+
+    <h2>Elite Motors</h2>
+    <p>&copy; 2026 Elite Motors. All Rights Reserved.</p>
+
+    <p>Location: Nairobi, Kenya</p>
+    <p>Email: info@elitemotors.com</p>
+    <p>Phone: +254 700 000 000</p>
+
+    <hr style="width:50%;">
+
+    <p>Luxury • Performance • Innovation</p>
+
+</footer>
+</section>
+
+</body>
+</html>
+
+
 
