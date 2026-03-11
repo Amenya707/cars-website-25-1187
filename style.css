@@ -37,3 +37,26 @@ h2 {
 section {
     background-color: #f4f4f4;
 }
+/* Style for main title using ID */
+#main-title {
+color: purple;
+text-align: center;
+font-size: 40px;
+}
+
+/* Style for headings using class */
+.section {
+color: darkpink;
+font-family: Arial;
+}
+
+/* Style for paragraphs using class */
+.text {
+color: black;
+font-size: 18px;
+line-height: 1.6;
+background-color: #ffe6f0;
+padding: 10px;
+margin: 10px;
+border-radius: 5px;
+}
