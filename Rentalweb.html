@@ -2,7 +2,92 @@
 <html>
 <head>
     <title>Car Rental System</title>
-    <link rel="stylesheet" href="css/styles.css">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial;
+            background: #111;
+            color: white;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            background: black;
+            padding: 10px;
+            position: sticky;
+            top: 0;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin: 10px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+
+        section {
+            padding: 40px;
+        }
+
+        .two-column {
+            display: flex;
+            gap: 20px;
+        }
+
+        .container {
+            background: #222;
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        .container img, iframe {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .gallery {
+            display: flex;
+            gap: 10px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            border: 1px solid white;
+            padding: 10px;
+        }
+
+        button {
+            background: red;
+            color: white;
+            padding: 10px;
+            border: none;
+        }
+
+        button:hover {
+            background: orange;
+        }
+
+        footer {
+            background: black;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+
 </head>
 <body>
 
@@ -10,57 +95,140 @@
 <nav>
     <h2>CarRental</h2>
     <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="cars.html">Cars</a></li>
-        <li><a href="booking.html">Booking</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#cars">Cars</a></li>
+        <li><a href="#booking">Booking</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
     </ul>
 </nav>
 
-<!-- HERO SECTION (2 COLUMNS) -->
-<section class="two-column">
-    <div>
-        <h1>Drive Your Dream Car</h1>
-        <p>Welcome to our car rental system. We provide luxury, comfort, and affordable rentals.</p>
-        <p>Choose from a wide range of vehicles and enjoy smooth rides.</p>
+<!-- HOME -->
+<section id="home">
+    <h1>Drive Your Dream Car</h1>
+
+    <div class="two-column">
+        <div>
+            <p>Welcome to our car rental system. We provide luxury and affordable cars.</p>
+            <p>Choose from a wide variety of vehicles suited for all needs.</p>
+        </div>
+
+        <div class="container">
+            <iframe height="250"
+            src="https://www.youtube.com/embed/32mX8bEJZKQ"></iframe>
+        </div>
     </div>
 
-    <div class="container">
-        <iframe width="100%" height="250" 
-        src="https://www.youtube.com/embed/32mX8bEJZKQ"></iframe>
+    <div class="gallery">
+        <div class="container"><img src="images/car1.jpg"></div>
+        <div class="container"><img src="images/car2.jpg"></div>
+        <div class="container"><img src="images/car3.jpg"></div>
     </div>
+
+    <!-- TABLE 1 -->
+    <table>
+        <tr><th>Car</th><th>Model</th><th>Price</th></tr>
+        <tr><td>Toyota</td><td>Corolla</td><td>$50</td></tr>
+        <tr><td>BMW</td><td>X5</td><td>$120</td></tr>
+    </table>
 </section>
 
-<!-- IMAGES IN CONTAINERS -->
-<section class="gallery">
-    <div class="container"><img src="images/car1.jpg"></div>
-    <div class="container"><img src="images/car2.jpg"></div>
-    <div class="container"><img src="images/car3.jpg"></div>
+<!-- CARS -->
+<section id="cars">
+    <h1>Available Cars</h1>
+
+    <div class="two-column">
+        <div class="container">
+            <img src="images/car4.jpg">
+        </div>
+        <div>
+            <h2>Luxury SUV</h2>
+            <p>Perfect for long journeys and family trips.</p>
+        </div>
+    </div>
+
+    <div class="two-column">
+        <div class="container">
+            <img src="images/car5.jpg">
+        </div>
+        <div>
+            <h2>Sports Car</h2>
+            <p>Fast, stylish, and modern design.</p>
+        </div>
+    </div>
+
+    <!-- TABLE 2 -->
+    <table>
+        <tr><th>Plan</th><th>Duration</th><th>Price</th></tr>
+        <tr><td>Basic</td><td>1 Day</td><td>$50</td></tr>
+        <tr><td>Premium</td><td>1 Week</td><td>$300</td></tr>
+    </table>
 </section>
 
-<!-- TABLE -->
-<table>
-    <tr>
-        <th>Car</th>
-        <th>Model</th>
-        <th>Price/Day</th>
-    </tr>
-    <tr>
-        <td>Toyota</td>
-        <td>Corolla</td>
-        <td>$50</td>
-    </tr>
-    <tr>
-        <td>BMW</td>
-        <td>X5</td>
-        <td>$120</td>
-    </tr>
-</table>
+<!-- BOOKING -->
+<section id="booking">
+    <h1>Book a Car</h1>
+
+    <form onsubmit="return calculatePrice()">
+        <input type="text" placeholder="Name" required><br><br>
+        <input type="number" id="days" placeholder="Number of Days" required><br><br>
+        <button type="submit">Calculate Price</button>
+    </form>
+
+    <p id="result"></p>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+    <h1>About Us</h1>
+
+    <p>We are a trusted car rental company.</p>
+    <p>We provide affordable and luxury vehicles.</p>
+    <p>Our services are available 24/7.</p>
+    <p>We value customer satisfaction.</p>
+    <p>We offer a wide variety of cars.</p>
+
+    <!-- NESTED LIST -->
+    <ul>
+        <li>Services
+            <ul>
+                <li>Car Rental</li>
+                <li>Airport Pickup</li>
+                <li>Corporate Rentals</li>
+                <li>Leasing</li>
+                <li>Chauffeur Service</li>
+            </ul>
+        </li>
+    </ul>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+    <h1>Contact Us</h1>
+
+    <form>
+        <input type="text" placeholder="Name"><br><br>
+        <input type="email" placeholder="Email"><br><br>
+        <textarea placeholder="Message"></textarea><br><br>
+        <button>Send</button>
+    </form>
+</section>
 
 <footer>
     <p>© 2026 Car Rental System</p>
 </footer>
+
+<script>
+function calculatePrice() {
+    let days = document.getElementById("days").value;
+    let price = days * 50;
+
+    document.getElementById("result").innerText =
+        "Total Price: $" + price;
+
+    return false;
+}
+</script>
 
 </body>
 </html>
