@@ -47,9 +47,21 @@
         }
 
         .info {
-            max-width: 900px;
+            max-width: 1200px;
             margin: auto;
             line-height: 1.7;
+        }
+
+        /* COLUMNS */
+        .two-columns {
+            display: flex;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .column {
+            flex: 1;
+            min-width: 300px;
         }
 
         /* CARDS */
@@ -77,7 +89,6 @@
             gap: 20px;
         }
 
-        /* CONTAINER FOR IMAGES */
         .image-container {
             background: #222;
             padding: 20px;
@@ -121,6 +132,16 @@
             background: orange;
         }
 
+        /* NESTED LIST */
+        ul {
+            line-height: 1.8;
+        }
+
+        ul ul {
+            margin-left: 20px;
+            list-style-type: square;
+        }
+
         footer {
             text-align: center;
             padding: 20px;
@@ -140,18 +161,23 @@
         <li><a href="#videos">Videos</a></li>
         <li><a href="#booking">Booking</a></li>
         <li><a href="#tables">Pricing</a></li>
+        <li><a href="#services">Services</a></li>
     </ul>
 </nav>
 
 <!-- HOME -->
 <section id="home">
     <h1>Drive the Future</h1>
-    <div class="info">
-        <p>Our car rental system provides seamless and reliable services to customers looking for luxury and affordable vehicles. Technology meets convenience here.</p>
-        <p>Plan a road trip, business travel, or daily commute — we have the perfect vehicle for you.</p>
-        <p>Safety, efficiency, and comfort are our top priorities; all vehicles are maintained and ready anytime.</p>
-        <p>Our platform allows users to browse, select, and book cars easily with just a few clicks.</p>
-        <p>Experience next-gen rentals with advanced features, transparent pricing, and excellent customer service.</p>
+    <div class="info two-columns">
+        <div class="column">
+            <p>Our car rental system provides seamless and reliable services to customers looking for luxury and affordable vehicles.</p>
+            <p>Plan a road trip, business travel, or daily commute — we have the perfect vehicle for you.</p>
+        </div>
+        <div class="column">
+            <p>Safety, efficiency, and comfort are our top priorities; all vehicles are maintained and ready anytime.</p>
+            <p>Our platform allows users to browse, select, and book cars easily with just a few clicks.</p>
+            <p>Experience next-gen rentals with advanced features, transparent pricing, and excellent customer service.</p>
+        </div>
     </div>
 </section>
 
@@ -216,6 +242,46 @@
         <tr><td>Child Seat</td><td>Optional child seats available upon request.</td></tr>
         <tr><td>Luxury Upgrade</td><td>Upgrade to luxury cars for a premium experience.</td></tr>
     </table>
+</section>
+
+<!-- SERVICES -->
+<section id="services">
+    <h1>Our Services</h1>
+    <div class="info two-columns">
+        <div class="column">
+            <ul>
+                <li>Car Rentals
+                    <ul>
+                        <li>Luxury Cars</li>
+                        <li>Affordable Options</li>
+                        <li>SUVs & Sedans</li>
+                    </ul>
+                </li>
+                <li>Airport Pickup
+                    <ul>
+                        <li>Quick & Convenient</li>
+                        <li>Professional Drivers</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="column">
+            <ul>
+                <li>Corporate Rentals
+                    <ul>
+                        <li>Business Packages</li>
+                        <li>Long-term Leasing</li>
+                    </ul>
+                </li>
+                <li>Chauffeur Services
+                    <ul>
+                        <li>Professional & Safe</li>
+                        <li>Flexible Scheduling</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
 </section>
 
 <footer>
