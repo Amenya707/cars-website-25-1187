@@ -46,6 +46,12 @@
             text-align: center;
         }
 
+        .info {
+            max-width: 900px;
+            margin: auto;
+            line-height: 1.7;
+        }
+
         /* CARDS */
         .card {
             background: #1a1a1a;
@@ -71,11 +77,12 @@
             gap: 20px;
         }
 
-        /* PARAGRAPH SECTION */
-        .info {
-            max-width: 900px;
-            margin: auto;
-            line-height: 1.7;
+        /* CONTAINER FOR IMAGES */
+        .image-container {
+            background: #222;
+            padding: 20px;
+            border-radius: 15px;
+            margin-bottom: 30px;
         }
 
         /* TABLE */
@@ -129,53 +136,52 @@
     <h2>NextGen Rentals</h2>
     <ul>
         <li><a href="#home">Home</a></li>
-        <li><a href="#media">Media</a></li>
+        <li><a href="#images">Cars</a></li>
+        <li><a href="#videos">Videos</a></li>
         <li><a href="#booking">Booking</a></li>
+        <li><a href="#tables">Pricing</a></li>
     </ul>
 </nav>
 
 <!-- HOME -->
 <section id="home">
     <h1>Drive the Future</h1>
-
     <div class="info">
-        <p>Our car rental system is designed to provide seamless and reliable services to customers looking for both luxury and affordable vehicles. We combine modern technology with convenience to give you the best experience.</p>
-
-        <p>Whether you are planning a road trip, business travel, or daily commuting, our wide selection of vehicles ensures that you find the perfect match for your needs.</p>
-
-        <p>We prioritize safety, efficiency, and comfort, ensuring that every vehicle is well-maintained and ready for use at any time.</p>
-
-        <p>Our platform is built with simplicity in mind, allowing users to easily browse, select, and book cars without complications.</p>
-
-        <p>Experience the next generation of car rentals with advanced features, transparent pricing, and excellent customer service.</p>
+        <p>Our car rental system provides seamless and reliable services to customers looking for luxury and affordable vehicles. Technology meets convenience here.</p>
+        <p>Plan a road trip, business travel, or daily commute — we have the perfect vehicle for you.</p>
+        <p>Safety, efficiency, and comfort are our top priorities; all vehicles are maintained and ready anytime.</p>
+        <p>Our platform allows users to browse, select, and book cars easily with just a few clicks.</p>
+        <p>Experience next-gen rentals with advanced features, transparent pricing, and excellent customer service.</p>
     </div>
 </section>
 
-<!-- MEDIA -->
-<section id="media">
-    <h1>Our Cars & Videos</h1>
+<!-- IMAGES -->
+<section id="images">
+    <h1>Our Cars</h1>
+    <div class="image-container grid">
+        <div class="card"><img src="car1.jpg" alt="Car 1"></div>
+        <div class="card"><img src="car2.jpg" alt="Car 2"></div>
+        <div class="card"><img src="car3.jpg" alt="Car 3"></div>
+        <div class="card"><img src="car4.jpg" alt="Car 4"></div>
+        <div class="card"><img src="car5.jpg" alt="Car 5"></div>
+    </div>
+</section>
 
+<!-- VIDEOS -->
+<section id="videos">
+    <h1>Car Videos</h1>
     <div class="grid">
-        <!-- IMAGES -->
-        <div class="card"><img src="car1.jpg"></div>
-        <div class="card"><img src="car2.jpg"></div>
-        <div class="card"><img src="car3.jpg"></div>
-        <div class="card"><img src="car4.jpg"></div>
-        <div class="card"><img src="car5.jpg"></div>
-
-        <!-- VIDEOS -->
-        <div class="card"><iframe src="https://www.youtube.com/embed/_HIHlgJs96U"></iframe></div>
-        <div class="card"><iframe src="https://www.youtube.com/embed/LErNGT1MyfA"></iframe></div>
-        <div class="card"><iframe src="https://www.youtube.com/embed/eAeon4jt7Cw"></iframe></div>
-        <div class="card"><iframe src="https://www.youtube.com/embed/d1Lc0Bdh0RQ"></iframe></div>
-        <div class="card"><iframe src="https://www.youtube.com/embed/z1jHD1ac4rE"></iframe></div>
+        <div class="card"><iframe src="https://www.youtube.com/embed/_HIHlgJs96U" allowfullscreen></iframe></div>
+        <div class="card"><iframe src="https://www.youtube.com/embed/LErNGT1MyfA" allowfullscreen></iframe></div>
+        <div class="card"><iframe src="https://www.youtube.com/embed/eAeon4jt7Cw" allowfullscreen></iframe></div>
+        <div class="card"><iframe src="https://www.youtube.com/embed/d1Lc0Bdh0RQ" allowfullscreen></iframe></div>
+        <div class="card"><iframe src="https://www.youtube.com/embed/z1jHD1ac4rE" allowfullscreen></iframe></div>
     </div>
 </section>
 
 <!-- BOOKING -->
 <section id="booking">
     <h1>Book Your Car</h1>
-
     <form onsubmit="return calculatePrice()">
         <input type="text" placeholder="Name" required><br>
 
@@ -192,14 +198,23 @@
     <h2 id="result"></h2>
 </section>
 
-<!-- TABLE -->
-<section>
+<!-- TABLES -->
+<section id="tables">
     <h1>Pricing Plans</h1>
-
     <table>
         <tr><th>Plan</th><th>Duration</th><th>Price</th></tr>
         <tr><td>Basic</td><td>1 Day</td><td>KSh 6,500</td></tr>
         <tr><td>Premium</td><td>1 Week</td><td>KSh 40,000</td></tr>
+    </table>
+
+    <h1>Extra Features</h1>
+    <table>
+        <tr><th>Feature</th><th>Description</th></tr>
+        <tr><td>GPS Navigation</td><td>All cars come with built-in GPS for easy navigation.</td></tr>
+        <tr><td>Insurance</td><td>Full coverage insurance is included for peace of mind.</td></tr>
+        <tr><td>24/7 Support</td><td>Our team is always available to assist you.</td></tr>
+        <tr><td>Child Seat</td><td>Optional child seats available upon request.</td></tr>
+        <tr><td>Luxury Upgrade</td><td>Upgrade to luxury cars for a premium experience.</td></tr>
     </table>
 </section>
 
